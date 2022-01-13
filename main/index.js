@@ -1,5 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Parent from '../components/Parent';
+
 
 
 class App extends React.Component{
@@ -18,13 +20,13 @@ class App extends React.Component{
 
   render(){
     return(
+
       <div>
         {this.state.text} <br/>
         <input type="text" value={this.state.text} onChange={this.handleChange.bind(this)}/>
         <br/>
-       
-        
-      </div>
+        </div>
+      
       
     )
   }
